@@ -4,21 +4,40 @@
 
 using namespace std;
 
+void printStackElements(stack<int> stack) {
+
+    while (!stack.empty()) {
+        cout << stack.top() << endl;
+        stack.pop();
+    }
+
+}
+
+// empty, size, push, pop, top
+
 int main() {
 
     stack<int>numbersStack;
 
+    // Adding elements to the stack
     numbersStack.push(1);
     numbersStack.push(2);
     numbersStack.push(3);
-    // empty, size, push, pop, top
+    numbersStack.pop();
+    
+    // Remove elements from the stack
+    //numbersStack.pop();
+    //numbersStack.pop();
+    //numbersStack.pop();
 
-    if(numbersStack.empty())
-        cout << "Stack is empty." << endl;
-    else 
-        cout << "Stack is not empty." << endl;    
+    printStackElements(numbersStack);
+
+    //if(numbersStack.empty())
+        //cout << "Stack is empty." << endl;
+    //else 
+     //   cout << "Stack is not empty." << endl;    
  
-    cout << "Stack size is " << numbersStack.size() << endl;
+    //cout << "Stack size is " << numbersStack.size() << endl;
 
 
 
