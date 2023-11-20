@@ -8,13 +8,16 @@ int main() {
 
     stack<int>numbersStack;
 
+    numbersStack.push(1);
     // empty, size, push, pop, top
 
     if(numbersStack.empty())
-        cout << "Stack is empty.";
+        cout << "Stack is empty." << endl;
     else 
-        cout << "Stack is not empty.";    
+        cout << "Stack is not empty." << endl;    
  
+    cout << "Stack size is " << numbersStack.size() << endl;
+
 
 
     return 0;
