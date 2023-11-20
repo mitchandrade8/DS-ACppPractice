@@ -15,8 +15,17 @@ int main() {
     // float month6 = 250;
 
     // Array 
-    float monthsArray[6] = { 100, 220, 300, 0, 200, 250} ;
+    float monthsArray[6]; // = { 100, 220, 300, 0, 200, 250} ;
 
+    // Allow the user to enter the amount for each month:
+    cout << "Enter amount: ";
+    cin >> monthsArray[0];
+    cin >> monthsArray[1];
+    cin >> monthsArray[2];
+    cin >> monthsArray[3];
+    cin >> monthsArray[4];
+    cin >> monthsArray[5];
+    
 
     float total = monthsArray[0] + monthsArray[1] + monthsArray[2] + monthsArray[3] + monthsArray[4] + monthsArray[5];
 
