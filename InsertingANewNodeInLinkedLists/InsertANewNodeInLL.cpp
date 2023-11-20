@@ -58,8 +58,16 @@ void insertAtTheEnd(Node** head, int newValue) {
 void insertAfter(Node*previous, int newValue) {
     // #Steps:
         // #1: Check if previous node is NULL
+    if (previous == NULL) {
+        cout << "Previous can not be NULL";
+        return;
+    }
         // #2: Prepare a newNode
+    Node* newNode = new Node();
+    newNode->Value = newValue;
         // #3: Insert newNode after previous
+    
+
 }
 
 int main() {
