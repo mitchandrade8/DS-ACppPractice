@@ -19,7 +19,7 @@ void printList(Node* n) {
     }
 }
 
-// Add a New Node in the Front of the LinkedList
+// Add a New Node in the 'Front' of the LinkedList
 void insertAtTheFront(Node**head, int newValue) {
     // #Steps:
         // #1: Prepare a new Node
@@ -30,6 +30,16 @@ void insertAtTheFront(Node**head, int newValue) {
         // #3: Move head of the list to point to the newNode
     *head = newNode;
 
+}
+
+// Adding a New Node at the 'End' of the LinkedList
+void insertAtTheEnd() {
+    // Steps:
+        // #1: Prepare a newNode:
+        // #2: If a LinkedList is empty, newNode will be a head node:
+        // #3: Find the last node:
+        // #4: Insert newNode after last node (at the end):
+    
 }
 
 int main() {
