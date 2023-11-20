@@ -9,8 +9,9 @@ public:
 };
 
 void printList(Node*n) {
-    while () {
+    while (n!=NULL) {
         cout << n->Value << endl;
+        n = n->Next;
     }
 }
 
@@ -26,6 +27,8 @@ int main() {
     second->Next = third;
     third->Value = 3;
     third->Next = NULL;
+
+    printList(head);
 
     return 0;
 
