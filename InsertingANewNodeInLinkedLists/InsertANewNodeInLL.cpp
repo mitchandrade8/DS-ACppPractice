@@ -20,7 +20,15 @@ void printList(Node* n) {
 }
 
 // Add a New Node in the Front of the LinkedList
-void insertAtTheFront(Node* n) {
+void insertAtTheFront(Node**head, int newValue) {
+    // #Steps:
+        // #1: Prepare a new Node
+    Node* newNode = new Node();
+    newNode->Value = newValue;
+        // #2: Put it in front of our current head
+    newNode->Next = *head;
+    
+        // #3: Move head of the list to point to the newNode
 
 }
 
@@ -37,6 +45,8 @@ int main() {
     third->Value = 3;
     third->Next = NULL;
 
+    insertAtTheFront(&head, -1);
+    printList(head);
 
     return 0;
 
