@@ -8,6 +8,11 @@ public:
     Node* Next;
 };
 
+void printList(Node*n) {
+    while () {
+        cout << n->Value << endl;
+    }
+}
 
 int main() {
 
@@ -25,4 +30,3 @@ int main() {
     return 0;
 
 }
-
