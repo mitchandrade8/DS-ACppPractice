@@ -16,8 +16,14 @@ int main() {
 
     float total = month1 + month2 + month3 + month4 + month5 + month6;
 
+    float average = total/6;
 
+    float inTwoYears = average * 24;
+
+    cout << "total = " << total << endl;
+    cout << "average = " << average << endl;
+    cout << "inTwoYears = " << inTwoYears << endl;
+    
     return 0;
 
 }
-
