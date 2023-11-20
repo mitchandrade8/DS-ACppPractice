@@ -27,8 +27,8 @@ void insertAtTheFront(Node**head, int newValue) {
     newNode->Value = newValue;
         // #2: Put it in front of our current head
     newNode->Next = *head;
-    
         // #3: Move head of the list to point to the newNode
+    *head = newNode;
 
 }
 
@@ -45,7 +45,9 @@ int main() {
     third->Value = 3;
     third->Next = NULL;
 
+    insertAtTheFront(&head, 0);
     insertAtTheFront(&head, -1);
+    insertAtTheFront(&head, -2); 
     printList(head);
 
     return 0;
