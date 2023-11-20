@@ -27,15 +27,18 @@ int main() {
     // cin >> monthsArray[4];
     // cin >> monthsArray[5];
 
+    // Creating a variable to sum 
+    float total = 0;
+
     // MARK: - Using a for loop:
     for (int i = 0; i <= 11; i++) {
         cout << "Please enter amount for month " << i+1 << ": ";
         cin >> monthsArray[i];
+        total += monthsArray[i];
     }
 
-
-    float total = monthsArray[0] + monthsArray[1] + monthsArray[2] + monthsArray[3] + monthsArray[4] + monthsArray[5] 
-        + monthsArray[6] + monthsArray[7] + monthsArray[8] + monthsArray[9] + monthsArray[10] + monthsArray[11] ;
+    // float total = monthsArray[0] + monthsArray[1] + monthsArray[2] + monthsArray[3] + monthsArray[4] + monthsArray[5] 
+        // + monthsArray[6] + monthsArray[7] + monthsArray[8] + monthsArray[9] + monthsArray[10] + monthsArray[11] ;
 
     float average = total/12;
 
