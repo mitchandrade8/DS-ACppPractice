@@ -54,6 +54,11 @@ void insertAtTheEnd(Node** head, int newValue) {
     
 }
 
+// Adding a Node After 
+void insertAfter(Node* ) {
+
+}
+
 int main() {
 
     Node* head = new Node();
