@@ -55,8 +55,11 @@ void insertAtTheEnd(Node** head, int newValue) {
 }
 
 // Adding a Node After 
-void insertAfter(Node* ) {
-
+void insertAfter(Node*previous, int newValue) {
+    // #Steps:
+        // #1: Check if previous node is NULL
+        // #2: Prepare a newNode
+        // #3: Insert newNode after previous
 }
 
 int main() {
