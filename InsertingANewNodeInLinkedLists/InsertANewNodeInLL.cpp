@@ -33,12 +33,24 @@ void insertAtTheFront(Node**head, int newValue) {
 }
 
 // Adding a New Node at the 'End' of the LinkedList
-void insertAtTheEnd() {
+void insertAtTheEnd(Node** head, int newValue) {
     // Steps:
         // #1: Prepare a newNode:
+    Node* newNode = new Node();
+    newNode->Value = newValue;
+    newNode->Next = NULL;
         // #2: If a LinkedList is empty, newNode will be a head node:
+    if (*head == NULL) {
+        *head = newNode;
+        return;
+    }
         // #3: Find the last node:
+    Node* last = *head;
+    while (last->Next!=NULL) {
+        last = last->Next;
+    }
         // #4: Insert newNode after last node (at the end):
+    last->Next = newNode;
     
 }
 
@@ -55,9 +67,8 @@ int main() {
     third->Value = 3;
     third->Next = NULL;
 
-    insertAtTheFront(&head, 0);
-    insertAtTheFront(&head, -1);
-    insertAtTheFront(&head, -2); 
+    insertAtTheEnd(&head, 4); 
+    insertAtTheEnd(&head, 5);
     printList(head);
 
     return 0;
