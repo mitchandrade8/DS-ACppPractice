@@ -9,6 +9,8 @@ int main() {
     stack<int>numbersStack;
 
     numbersStack.push(1);
+    numbersStack.push(2);
+    numbersStack.push(3);
     // empty, size, push, pop, top
 
     if(numbersStack.empty())
